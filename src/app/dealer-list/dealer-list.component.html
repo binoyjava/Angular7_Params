@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let dealer of dealers">
+        {{dealer.pacode}}&nbsp;
+        <a [routerLink]="['/dealerDetail', dealer.pacode]">{{dealer.name}}</a>
+    </li>
+</ul>
